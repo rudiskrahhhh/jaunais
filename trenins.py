@@ -1,0 +1,3 @@
+vards = "Sveiki!"
+
+print(vards)
