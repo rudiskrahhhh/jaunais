@@ -1,14 +1,17 @@
-
-
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "heyaa"
+    return render_template("index.html")
 
-if __name__ =='__main__':
+@app.route("/teksts")
+def te():
+    return render_template("teksts.html")
+
+
+if __name__ == '__main__':
     app.run(port = 5000)
 
-print("heyaa")
+print("Sveiki!")
