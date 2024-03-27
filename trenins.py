@@ -13,7 +13,7 @@ for skaitlis in range(1,11, 2):
 
 def zvaigznites(skaits):
     for rindasNr in range(1, skaits+1):
-        for zvaigzne in range(rindasNr)
+        for zvaigzne in range(rindasNr):
 
         print("*")
 
