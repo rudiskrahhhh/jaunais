@@ -10,6 +10,11 @@ def index():
 def te():
     return render_template("teksts.html")
 
+@app.route("/saraksts")
+def saraksts():
+    saraksts = ["rudis", "roberts", "janis"]
+    return render_template("saraksts.html", vardi = saraksts)
+
 
 if __name__ == '__main__':
     app.run(port = 5000)
