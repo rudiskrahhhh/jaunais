@@ -44,3 +44,5 @@ print("---------------------------------")
 
 for elements in skaitlu_pari[:-1]:
     print("pirmais skaitlis:", elements[0],"otrais skaitlis:", elements[1], "rezultāts: ", rezultats(elements[0], elements[1]))
+
+print("---------------------------------")
