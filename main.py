@@ -13,8 +13,8 @@ def te():
 
 @app.route("/saraksts")
 def saraksts():
-    saraksts = ["rudis", "roberts", "janis"]
-    bildes = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgulzijmK-UbALHbYL6erchb80AOm3iQQnUXEKKgVtsQ&s", "https://i0.wp.com/boingboing.net/wp-content/uploads/2017/10/636432493977643917-michael-christopher-estes.jpg?fit=534%2C712&ssl=1", "https://i.natgeofe.com/k/ad9b542e-c4a0-4d0b-9147-da17121b4c98/MOmeow1_3x4.png"]
+    saraksts = ["Anna", "Katls", "Kartupelis"]
+    bildes = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcCG4898FTkK5IUBMpLleBHtjK3jUILS3YsjCFfLr56g&s","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtv-3G97RDAt-sgNqxhaEB4f2SDwVxJaOq7JOY0D_7zA&s","https://www.darzaabc.lv/public/assets/images/products/Agrimatco/kartupe%C4%BCi/kartupeli-monalisa-dzeltenie-seklas-kartupelu-stadamais-materials.jpg"]
     kopejais_saraksts = []
     faila_rindas = dabut_rindinas()
     for rinda in faila_rindas:
@@ -23,6 +23,9 @@ def saraksts():
 
     return render_template("saraksts.html", vardi = saraksts, bildes = bildes, garums = len(saraksts), visi = kopejais_saraksts)
 
+@app.route("/info")
+def info():
+    return render_template("info.html")
 
 
 if __name__ == '__main__':
