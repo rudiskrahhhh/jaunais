@@ -17,5 +17,13 @@
     {% endfor %}
 </ol>
 
+<h3>Kopējais saraksts</h3>
+<ol>
+    {% for viens in visi %}
+    <li>{{viens[0]}}, <img src ={{viens[1]}} height="50px" width="50px"></li>
+    {% endfor %}
+</ol>
+
+
 
 {% endblock %}
