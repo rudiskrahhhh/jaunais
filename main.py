@@ -23,7 +23,7 @@ def saraksts():
 
     return render_template("saraksts.html", vardi = saraksts, bildes = bildes, garums = len(saraksts), visi = kopejais_saraksts)
 
-@app.route("/info")
+@app.route("/info", methods=['POST', 'GET'])
 def info():
     return render_template("info.html")
 
